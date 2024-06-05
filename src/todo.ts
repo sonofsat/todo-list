@@ -1,4 +1,13 @@
 
+//interface Person {
+  //name: string;
+  //age: number;
+//}
+
+//function greet(person: Person) {
+  //return "Hello " + person.name;
+//}
+
 export interface Task {
     id: number;
     description: string;
@@ -9,9 +18,8 @@ export interface Task {
 export class TodoList {
         tasks: Task[] = []; 
 
-
   //Agregar una tarea
-    addTask(description: string): void {
+    addTask(description: string): void { 
       const task: Task = {
         id: this.tasks.length + 1,
         description,

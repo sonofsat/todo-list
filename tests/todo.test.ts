@@ -1,5 +1,11 @@
 
-import { TodoList } from '../src/todo';
+//ejemplo de test: test('el mejor sabor es de melocotón', () => { expect(mejorSabor()).toBe('melocotón');});
+
+import { TodoList } from '../src/todo'; // import type {Config} from 'jest';
+
+//describe('test 1', (t) => {
+  //it('some test');
+//}); https://nodejs.org/docs/latest/api/test.html#todo-tests
 
 describe('TodoList', () => {
   let todoList: TodoList;
@@ -8,12 +14,12 @@ describe('TodoList', () => {
     todoList = new TodoList();
   });
 
-  test('should add a task to the list', () => {
+  it('should add a task to the list', () => {  
     todoList.addTask('Ir al mercadona');
-    expect(todoList.getTasks()).toHaveLength(1);
+    expect(todoList.getTasks()).toHaveLength(1); 
   });
 
-  test('should mark a task as completed', () => {
+  it('should mark a task as completed', () => {
     todoList.addTask('Ir al mercadona');
     const tasks = todoList.getTasks();
     const taskId = tasks[0].id;
@@ -21,7 +27,7 @@ describe('TodoList', () => {
     expect(todoList.getTasks()[0].completed).toBe(true);
   });
 
-  test('should delete a task from the list', () => {
+  it('should delete a task from the list', () => {
     todoList.addTask('Ir al mercadona');
     const tasks = todoList.getTasks();
     const taskId = tasks[0].id;
