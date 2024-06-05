@@ -1,19 +1,18 @@
 # todo-list
 
-This is a todo-list app made with TS and TDD. 
+Esta es una todo-list app hecho con TS y TDD. 
 
-## Features
 
-- Allows adding a task to the list.
-- Allows marking a task as done.
-- Allows deleting a task from the list.
-- Shows the complete list of tasks.
+
+- Añade un tarea a la lista.
+- Marca una tarea completa.
+- Elimina tareas de la lista.
+- Muestra la lista completa.
 
 ## Getting Started
 
-To get started, follow these steps:
-
-1. Clone this repository.
-2. Install dependencies by running `npm install`.
-3. Run tests by running `npm test`.
-4. Start the application by running `npm start`.
+Para comenzar, sigue los siguientes pasos: 
+1. Clona el repositorio.
+2. Instala dependencias ejecutando `npm install`.
+3. Ejecutar pruebas con: `npm test`.
+4. Ejecutar la aplicación con: `npm start`.
