@@ -7,7 +7,7 @@ export interface Task {
 
 
 export class TodoList {
-    private tasks: Task[] = [];
+        tasks: Task[] = []; 
 
 
   //Agregar una tarea

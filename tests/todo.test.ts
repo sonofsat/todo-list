@@ -8,12 +8,12 @@ describe('TodoList', () => {
     todoList = new TodoList();
   });
 
-  it('should add a task to the list', () => {
+  test('should add a task to the list', () => {
     todoList.addTask('Do laundry');
     expect(todoList.getTasks()).toHaveLength(1);
   });
 
-  it('should mark a task as completed', () => {
+  test('should mark a task as completed', () => {
     todoList.addTask('Do laundry');
     const tasks = todoList.getTasks();
     const taskId = tasks[0].id;
@@ -21,7 +21,7 @@ describe('TodoList', () => {
     expect(todoList.getTasks()[0].completed).toBe(true);
   });
 
-  it('should delete a task from the list', () => {
+  test('should delete a task from the list', () => {
     todoList.addTask('Do laundry');
     const tasks = todoList.getTasks();
     const taskId = tasks[0].id;
