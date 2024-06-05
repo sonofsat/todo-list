@@ -1,6 +1,6 @@
 # todo-list
 
-Esta es una aplicación de todo-list creada con TypeScript y TDD.
+This is a todo-list app made with TS and TDD. 
 
 ## Features
 
